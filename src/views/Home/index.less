@@ -1,0 +1,187 @@
+#body {
+  // position: fixed;
+  width: 100%;
+  height: 100%;
+}
+
+.my-top {
+  height: 80px;
+  align-items: center;
+  justify-content: space-between;
+  padding-right: 20px;
+  background-color: #323232;
+  color: #fff;
+}
+
+.select-col {
+  color: #2A59CB;
+}
+
+.nav-item {
+  width: 100px;
+  height: 80px;
+  cursor: pointer;
+  font-size: 13px;
+  position: relative;
+  margin-right: 10px;
+}
+
+.curr-date {
+  background: url('../../assets/image/index/top_line.png') no-repeat center bottom;  
+}
+
+.content {
+  width: 100%;
+  height: calc(100% - 80px);
+}
+
+#mapName {
+  width: 100%;
+  height: 100%;
+}
+
+@deep: ~'>>>';
+
+.content @{deep} #mapName_zoom_slider {
+  right: 20px;
+  bottom: 320px;
+  top: unset;
+  left: unset;
+}
+
+#body @{deep} #weather-v2-plugin-standard{
+  position: absolute;
+  top: 80px;
+  z-index: 9;
+}
+
+.daping {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.map-style-button {
+  position: absolute;
+  bottom: 10px;
+  right: 10px;
+  width: 250px;
+  height: 40px;
+  background: rgba(4, 12, 29, .7);
+  box-shadow: 0 -3px 20px 0 rgba(0, 0, 0, .2);
+  border-radius: 4px;
+  padding: 8px 0;
+  z-index: 9;
+  color: #fff;
+}
+
+.map-style-buttonlist:first-child {
+  border-right: 1px dashed #fff;
+}
+
+.map-style-buttonlist {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+.map-style-button .map-style-buttonActive {
+  color: #64b4ff;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.utilsBar {
+  position: absolute;
+  right: 20px;
+  bottom: 180px;
+  z-index: 9;
+  width: 30px;
+  align-items: center;
+  border-radius: 5px;
+  background-color: #fff;
+  padding: 5px 0;
+}
+
+.marginB5 {
+  margin-bottom: 5px;
+}
+
+.season-box {
+  position: absolute;
+  right: 20px;
+  top: 100px;
+  z-index: 9;
+}
+
+.left-box {
+  color: #fff;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  width: 400px;
+  height: calc(100% - 180px);
+}
+
+.top,
+.center,
+.bottom {
+  padding: 20px 10px 0;
+  height: calc(33.3% - 20px);
+  position: relative;
+}
+
+.pie-left-con {
+  padding-left: 10px;
+  justify-content: center;
+
+  & > div {
+    padding: 2px 0;
+  }
+}
+
+.lenged-box {
+  width: 100px;
+  height: 120px;
+  color: #fff;
+  position: absolute;
+  left: 400px;
+  bottom: 0;
+  background-color: rgba(0, 0, 0, 0.3);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  justify-content: center;
+
+  & >div {
+    padding: 5px;
+    & > i {
+      width: 50px;
+      height: 24px;
+      margin-right: 5px;
+    }
+  }
+
+  & > div:first-child i{
+    background-color: #3C90F7;
+  }
+  & > div:nth-child(2) i{
+    background-color: #55BFC0;
+  }
+  & > div:last-child i{
+    background-color: #5EBE67;
+  }
+}
+
+.select-bg {
+  background-color: #3C90F7;
+  color: #fff;
+}
+
+.center @{deep} .el-carousel, .center @{deep} .el-carousel__container{
+  height: 100%;
+}
+
