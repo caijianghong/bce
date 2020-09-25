@@ -2,9 +2,9 @@ const path = require('path')
 const resolve = dir => {
     return path.join(__dirname, dir)
 }
-const BASE_URL = '/'
+// const BASE_URL = '/'
 module.exports={
-    publicPath: BASE_URL,
+    publicPath: process.env.NODE_ENV === "production" ? "/bce" : "/",
     lintOnSave: true,
     productionSourceMap: false,
     chainWebpack: config => {
