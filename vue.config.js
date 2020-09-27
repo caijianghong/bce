@@ -4,9 +4,8 @@ const resolve = dir => {
 }
 const BASE_URL = '/'
 module.exports={
-    publicPath: process.env.NODE_ENV === "production" ? "/bce" : BASE_URL,
-    // publicPath: './',
-    outputDir: "dist",
+    // publicPath: process.env.NODE_ENV === "production" ? "/bce" : BASE_URL,
+    publicPath: './',
     lintOnSave: true,
     productionSourceMap: true,
     chainWebpack: config => {
