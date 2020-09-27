@@ -7,8 +7,8 @@ Router.prototype.push = function push(location) {
   return routerPush.call(this, location).catch(error=> error)
 }
 export default new Router({
-  // mode: 'history',
-  mode: 'hash',
+  mode: 'history',
+  // mode: 'hash',
   base: process.env.BASE_URL,
   routes: [
     {
