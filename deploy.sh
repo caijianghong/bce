@@ -15,6 +15,6 @@ git add -A
 git commit -m 'deploy'
  
 # 提交到 https://github.com/caijianghong/bce.git 项目的 gh-pages 分支
-git push -f https://github.com/caijianghong/bce.git master:gh-pages
+git push -f git@github.com:caijianghong/bce.git master:gh-pages
  
 cd -
