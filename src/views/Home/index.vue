@@ -182,7 +182,7 @@ import {
 } from 'esri-loader';
 var geoserviceUrl = "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Utilities/Geometry/GeometryServer";
 var map, layera, layerb, bgLayer, borderLayer, measureFlag, landArea, waterArea, zhenPoints, graphicsLayer;
-var base = process.env.NODE_ENV === "production" ? "/bce" : '';
+var base = "/bce";
 
 function getBase() {
   return axios.get(base + "/excels/total.xls", {
