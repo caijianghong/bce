@@ -251,7 +251,8 @@ export default {
     },
     getExcel() {
       showLoading("拼命加载中...");
-      axios.get("/excels/2019.xlsx", {
+      let base = process.env.NODE_ENV === "production" ? "/bce" : '';
+      axios.get(base + "/excels/2019.xlsx", {
           responseType: 'arraybuffer'
         })
         .then((res) => {

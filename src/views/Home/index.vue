@@ -182,33 +182,34 @@ import {
 } from 'esri-loader';
 var geoserviceUrl = "https://sampleserver6.arcgisonline.com/arcgis/rest/services/Utilities/Geometry/GeometryServer";
 var map, layera, layerb, bgLayer, borderLayer, measureFlag, landArea, waterArea, zhenPoints, graphicsLayer;
+var base = process.env.NODE_ENV === "production" ? "/bce" : '';
 
 function getBase() {
-  return axios.get("/excels/total.xls", {
+  return axios.get(base + "/excels/total.xls", {
     responseType: 'arraybuffer'
   })
 }
 
 function getData2016() {
-  return axios.get("/excels/2016.xlsx", {
+  return axios.get(base + "/excels/2016.xlsx", {
     responseType: 'arraybuffer'
   })
 }
 
 function getData2017() {
-  return axios.get("/excels/2017.xlsx", {
+  return axios.get(base + "/excels/2017.xlsx", {
     responseType: 'arraybuffer'
   })
 }
 
 function getData2018() {
-  return axios.get("/excels/2018.xlsx", {
+  return axios.get(base + "/excels/2018.xlsx", {
     responseType: 'arraybuffer'
   })
 }
 
 function getData2019() {
-  return axios.get("/excels/2019.xlsx", {
+  return axios.get(base + "/excels/2019.xlsx", {
     responseType: 'arraybuffer'
   })
 }
