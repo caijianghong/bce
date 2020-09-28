@@ -184,31 +184,31 @@ var geoserviceUrl = "https://sampleserver6.arcgisonline.com/arcgis/rest/services
 var map, layera, layerb, bgLayer, borderLayer, measureFlag, landArea, waterArea, zhenPoints, graphicsLayer;
 
 function getBase() {
-  return axios.get("/系统所需表格数据/德清县基本概况.xls", {
+  return axios.get("/excels/total.xls", {
     responseType: 'arraybuffer'
   })
 }
 
 function getData2016() {
-  return axios.get("/系统所需表格数据/2016年.xlsx", {
+  return axios.get("/excels/2016.xlsx", {
     responseType: 'arraybuffer'
   })
 }
 
 function getData2017() {
-  return axios.get("/系统所需表格数据/2017年.xlsx", {
+  return axios.get("/excels/2017.xlsx", {
     responseType: 'arraybuffer'
   })
 }
 
 function getData2018() {
-  return axios.get("/系统所需表格数据/2018年.xlsx", {
+  return axios.get("/excels/2018.xlsx", {
     responseType: 'arraybuffer'
   })
 }
 
 function getData2019() {
-  return axios.get("/系统所需表格数据/2019年.xlsx", {
+  return axios.get("/excels/2019.xlsx", {
     responseType: 'arraybuffer'
   })
 }

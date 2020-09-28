@@ -251,7 +251,7 @@ export default {
     },
     getExcel() {
       showLoading("拼命加载中...");
-      axios.get("/系统所需表格数据/2019年.xlsx", {
+      axios.get("/excels/2019.xlsx", {
           responseType: 'arraybuffer'
         })
         .then((res) => {
